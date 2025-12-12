@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Dharma Hydrocolloid — Header Demo</title>
+
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- ===== HEADER / NAVBAR ===== -->
+  <header class="site-header" role="banner">
+    <div class="container nav-container">
+      <div class="logo-section">
+        <!-- Update path if your logo is stored elsewhere -->
+        <img src="assets/images/logo.jpg" alt="Dharma Hydrocolloid Logo" class="logo-img" />
+        <h1 class="brand-name">Dharma Hydrocolloid</h1>
+      </div>
+
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Product categories</a>
+        <a href="index.html#contact">Contact</a>
+        
+        
+      </nav>
+
+      <!-- Language selector -->
+      <div class="lang-wrap" id="langWrap">
+        <button class="lang-btn" id="langBtn" aria-haspopup="listbox" aria-expanded="false">
+          <span class="lang-icon" aria-hidden="true">🌐</span>
+          <span class="lang-selected" id="langSelected">English</span>
+          <span class="arrow">▾</span>
+        </button>
+
+        <div class="lang-dropdown" id="langDropdown" role="dialog" aria-label="Select languages" aria-modal="false">
+          <div class="lang-header">
+            <input type="search" id="langSearch" placeholder="Search languages…" aria-label="Search languages" />
+            <button id="clearSearch" title="Clear search">✕</button>
+          </div>
+
+          <div class="lang-controls">
+            <label><input type="checkbox" id="toggleMulti" /> Multi-select</label>
+            <button id="applyBtn" class="small-btn">Apply</button>
+          </div>
+
+          <ul class="lang-list" id="langList" role="listbox" aria-multiselectable="false">
+            <!-- language items are populated in script.js -->
+          </ul>
+
+          <div class="lang-footer">
+            <small>Selected: <span id="selectedCount">0</span></small>
+          </div>
+        </div>
+      </div><!-- .lang-wrap -->
+    </div><!-- .nav-container -->
+  </header>
+  <!-- ===== HERO / INTRO SECTION ===== -->
+<section id="hero" class="hero-section">
+  <div class="hero-inner container">
+    <div class="hero-left">
+      <p class="eyebrow">Premium Natural Gums &amp; Hydrocolloids</p>
+
+      <!-- <h2 class="hero-title">
+        Dharma Hydrocolloid is a leading exporter of high-quality natural gums,
+        textile chemicals, and food ingredients
+      </h2> -->
+
+      <p class="hero-desc">
+        Dharma Hydrocolloid is a leading exporter of high-quality natural gums,
+        textile chemicals, and food ingredients. We serve clients globally with
+        exceptional products and reliable service.
+      </p>
+
+      <div class="hero-ctas">
+        <a href="#products" class="btn btn-primary" id="exploreBtn">Explore Products ➜</a>
+        <a href="#contact" class="btn btn-outline" id="contactBtn">Contact Us</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-title">Global</div>
+          <div class="stat-sub">Export Reach</div>
+        </div>
+        <div class="stat">
+          <div class="stat-title">Premium</div>
+          <div class="stat-sub">Quality Products</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <!-- Replace path if your image is located elsewhere -->
+      <img src="assets/images/shiping_container.png"
+           alt="shipping containers"
+           class="hero-image" id="heroImage" loading="lazy" />
+    </div>
+  </div>
+</section>
+<section id="about" class="about-section container" aria-labelledby="about-title">
+  <div class="about-grid">
+    <figure class="about-figure" aria-hidden="false">
+      <img src="assets/images/about-hero.jpg" alt="Warehouse & logistics - Dharma Hydrocolloid" />
+    </figure>
+
+    <div class="about-content">
+      <h2 id="about-title">About Dharma Hydrocolloid</h2>
+
+      <p class="about-lead">
+        Dharma Hydrocolloid is a leading exporter of high-quality natural gums, textile chemicals, and food ingredients.
+        We combine deep agricultural sourcing expertise with modern processing and quality controls to deliver reliable,
+        standards-compliant products to customers worldwide.
+      </p>
+
+      <p class="about-paragraph muted">
+        With a dedicated focus on quality and traceability, our supply chain ensures timely deliveries and consistent product performance.
+        We serve food, pharmaceutical, personal care, textile and industrial customers with custom grades, documentation and global logistics support.
+      </p>
+
+      <ul class="about-checklist" aria-hidden="false">
+        <li><span class="check">✓</span><span>Global export network</span></li>
+        <li><span class="check">✓</span><span>Premium quality assurance</span></li>
+        <li><span class="check">✓</span><span>Competitive pricing & flexible packaging</span></li>
+        <li><span class="check">✓</span><span>Technical formulation support</span></li>
+      </ul>
+
+      <div class="about-actions">
+        <a class="btn btn-primary" href="#contact">Contact Us Today</a>
+        <a class="btn btn-outline" href="assets/docs/company-profile.pdf" target="_blank" rel="noopener">Download Profile</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===== OUR PRODUCTS SECTION ===== -->
+<section id="products" class="products-section">
+  <div class="container">
+    <h2 class="section-title">Our Products</h2>
+    <p class="section-subtext">
+      Explore our comprehensive range of natural gums, textile chemicals,
+      and food ingredients. We deliver quality products that meet international standards.
+    </p>
+
+    <div class="product-cards">
+      <!-- Card 1 -->
+      <div class="product-card">
+        <img src="assets/images/gum_ghati_1.jpg" alt="Natural gums" />
+        <div class="card-body">
+          <div class="icon">🍃</div>
+          <h3>Natural Gums &amp; Hydrocolloids</h3>
+          <p>Premium quality natural gums for various industrial applications</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="product-card">
+        <img src="assets/images/935a190e-ab8b-4c06-8f2c-963a6584d8e5.png" alt="Textile chemicals" />
+        <div class="card-body">
+          <div class="icon">🧴</div>
+          <h3>Textile Chemicals</h3>
+          <p>High-grade chemicals for textile processing and manufacturing</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="product-card">
+        <img src="assets/images/40bcffcc-5a52-4635-b99f-9dfda9e1205e.png" alt="Food ingredients" />
+        <div class="card-body">
+          <div class="icon">🍽️</div>
+          <h3>Food Ingredients</h3>
+          <p>Food-grade preservatives and additives for the food industry</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PRODUCT CATEGORIES SECTION ===== -->
+<section id="categories" class="categories-section">
+  <div class="container">
+    <h2 class="section-title">Product Categories</h2>
+
+    <div class="accordion">
+      <!-- Natural Gums -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>🍃 Natural Gums &amp; Hydrocolloids</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="accordion-panel">
+          <ul>
+            <li><a href="gum-ghatti.html">Gum Ghatti</a></li>
+            <li><a href="gum-arabic.html">Gum Arabic</a></li>
+            <li><a href="gum-karaya.html">Gum Karaya</a></li>
+            <li><a href="gum-olibanum.html">Gum Olibanum</a></li>
+            <li><a href="guar-gum.html">Guar Gum</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Textile Chemicals -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>🧴 Textile Chemicals</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="accordion-panel">
+          <ul>
+            <li><a href="bleaching-powder.html">Bleaching Powder</a></li>
+            <li><a href="caustic-soda-flakes.html">Caustic Soda Flakes</a></li>
+            <li><a href="hydrogen-peroxide.html">Hydrogen Peroxide</a></li>
+            <li><a href="oxalic-acid.html">Oxalic Acid</a></li>
+            <li><a href="pva.html">PVA (Polyvinyl Alcohol)</a></li>
+            <li><a href="soda-ash.html">Soda Ash</a></li>
+            <li><a href="sodium-hydrosulphite.html">Sodium Hydrosulphite</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Food Ingredients -->
+      <div class="accordion-item">
+        <button class="accordion-header">
+          <span>🍽️ Food Ingredients</span>
+          <span class="arrow">▾</span>
+        </button>
+        <div class="accordion-panel">
+          <ul>
+            <li><a href="sodium-propionate.html">Sodium Propionate</a></li>
+            <li><a href="calcium-propionate.html">Calcium Propionate Powder</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+
+  <!-- <main>
+    <section style="padding:48px; max-width:900px; margin:0 auto;">
+      <h2>Header demo</h2>
+      <p>Use the globe button on the right to open the language picker. You can toggle multi-select inside the dropdown.</p>
+      <p>After selecting languages, press <strong>Apply</strong> (or in single-select mode the selection will update immediately).</p>
+    </section>
+  </main> -->
+  <main>
+    <!-- ===== About Section (paste into <main>) ===== -->
+
+<!-- ===== End about section ===== -->
+ <!-- ===== Footer: CTA + site footer ===== -->
+<footer id="siteFooter" class="site-footer" role="contentinfo">
+  <!-- Centered CTA -->
+  <!-- <div class="footer-cta">
+    <div class="footer-cta-inner">
+      <!-- <h3 class="footer-cta-title">Request a quote or sample</h3>
+      <p class="footer-cta-sub">Email us for SDS, COA, pricing and export documentation — we support global shipping and flexible packaging.</p> -->
+
+      <!-- <div class="footer-cta-actions">
+        <a class="cta-btn cta-primary" href="mailto:aadeshgandhi@dharmahydrocolloid.com?subject=Sample%20Request">Email Sales</a>
+        <a class="cta-btn cta-outline" href="https://wa.me/918097335455" target="_blank" rel="noopener">Call / WhatsApp</a>
+      </div> -->
+    </div>
+  </div> 
+<section id="contact">
+  <!-- Main footer row -->
+  <div class="footer-main">
+    <div class="footer-inner">
+      <div class="footer-col footer-brand">
+        <img src="assets/images/logo.jpg" alt="Dharma Hydrocolloid" class="footer-logo">
+        <p class="muted">Premium natural gums, food & industrial chemicals — global supply & technical support.</p>
+      </div>
+
+      <div class="footer-col footer-links">
+        <h4>Quick links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#products">Products</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-contact">
+        <h4>Contact</h4>
+        <p class="muted">Email: <a href="mailto:aadeshgandhi@dharmahydrocolloid.com">aadeshgandhi@dharmahydrocolloid.com</a></p>
+        <p class="muted">Phone: <a href="tel:+918097335455">+91 80973 35455</a></p>
+        <p class="muted">Office: Mon–Fri, 09:00–18:00 IST</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <small>© <span id="footerYear">2025</span> Dharma Hydrocolloid — All rights reserved.</small>
+      <a href="#top" id="footerBackToTop" class="footer-back">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+</section>
+<!-- small Back-to-top floating button (optional) -->
+<button id="backToTopBtn" class="back-to-top" aria-label="Back to top">↑</button>
+
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
