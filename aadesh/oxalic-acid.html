@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Oxalic Acid — Dharma Hydrocolloid</title>
+  <meta name="description" content="Industrial grade Oxalic Acid (C2H2O4) — high-purity rust remover, textile bleaching agent and industrial cleaner. Request quote & SDS." />
+  <meta name="theme-color" content="#ffffff" />
+  <style>
+    :root{
+      --blue:#2563ff;
+      --muted:#586670;
+      --accent:#0b1220;
+      --container:1200px;
+      --header-h:72px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial;color:#0b2545;background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+    a{color:inherit}
+    img{max-width:100%;display:block}
+
+    /* Header (sticky) */
+    .site-header{
+      position:fixed;left:0;right:0;top:0;background:#fff;border-bottom:1px solid rgba(11,18,32,0.04);
+      display:flex;align-items:center;z-index:9999;padding:10px 20px;box-shadow:0 6px 18px rgba(2,6,23,0.03)
+    }
+    .nav-inner{max-width:var(--container);margin:0 auto;display:flex;align-items:center;justify-content:space-between;width:100%}
+    .logo{display:flex;align-items:center;gap:12px}
+    .logo img{height:44px;width:44px;object-fit:cover;border-radius:6px}
+    .brand{color:var(--blue);font-weight:600;font-size:20px}
+    .nav-links{display:flex;gap:20px;align-items:center}
+    .nav-links a{color:#1f2937;text-decoration:none;font-weight:500;padding:6px}
+    .nav-links a:hover{color:var(--blue)}
+    .lang-btn{background:#f4f6fb;padding:8px 12px;border-radius:10px;border:none;cursor:pointer}
+    .nav-toggle{display:none;border:none;background:none;font-size:20px;cursor:pointer}
+    @media(max-width:720px){ .nav-links{display:none} .nav-toggle{display:block} }
+
+    /* Page container & hero */
+    main{padding-top:calc(var(--header-h) + 18px)}
+    .container{max-width:var(--container);margin:0 auto;padding:28px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center;background:linear-gradient(180deg,#fbfdff,#fff);padding:28px;border-radius:10px}
+    .eyebrow{color:#334155;font-weight:600;margin:0 0 6px;font-size:13px}
+    .hero-title{font-size:26px;margin:0 0 12px;font-weight:700;color:#07203a}
+    .hero-desc{color:var(--muted);margin:0 0 16px}
+    .cta-row{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;font-weight:700;border:none;cursor:pointer;text-decoration:none}
+    .btn-primary{background:var(--accent);color:#fff;box-shadow:0 10px 28px rgba(11,18,32,0.12)}
+    .btn-outline{background:#fff;border:1px solid rgba(11,18,32,0.06);color:#0b1220}
+    .hero-image{border-radius:12px;overflow:hidden;height:300px;box-shadow:0 24px 60px rgba(2,6,23,0.08)}
+    .hero-image img{width:100%;height:100%;object-fit:cover}
+
+    /* Content grid */
+    .content-grid{display:grid;grid-template-columns:1fr 340px;gap:28px;margin-top:26px}
+    h2{color:#07203a;margin-top:0}
+    .lead{color:var(--muted)}
+    .specs{background:#f8fafc;padding:16px;border-radius:12px}
+    table{width:100%;border-collapse:collapse}
+    table td{padding:8px;border-bottom:1px solid rgba(11,18,32,0.03)}
+    .section{margin-bottom:22px}
+
+    /* gallery */
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}
+    .gallery img{width:100%;height:140px;object-fit:cover;border-radius:8px;cursor:pointer;box-shadow:0 12px 30px rgba(2,6,23,0.06)}
+
+    /* safety */
+    .safety{background:#fff7f7;border-left:4px solid #f87171;padding:12px;border-radius:8px;color:#7c2d2d}
+
+    /* CTA footer */
+    .cta-footer{background:#f7fbfe;border-top:1px solid rgba(11,18,32,0.04);padding:44px 18px 22px;margin-top:34px}
+    .cta-wrap{max-width:980px;margin:0 auto;text-align:center}
+    .cta-wrap h3{margin:0 0 8px;font-size:24px;color:#07203a}
+    .cta-sub{color:var(--muted);margin:0 0 18px}
+    .cta-buttons{display:inline-flex;gap:14px;align-items:center;justify-content:center;flex-wrap:wrap}
+    .cta-btn{display:inline-block;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:700}
+    .cta-btn.primary{background:var(--accent);color:#fff}
+    .cta-btn.outline{background:#fff;border:1px solid rgba(11,18,32,0.06);color:var(--accent)}
+    .cta-footer-bottom{text-align:center;color:var(--muted);margin-top:14px;font-size:13px}
+
+    /* lightbox */
+    .lightbox{position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.75);z-index:20000;padding:20px}
+    .lightbox img{max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 20px 60px rgba(2,6,23,0.6)}
+
+    @media(max-width:1000px){ .hero{grid-template-columns:1fr 320px} .content-grid{grid-template-columns:1fr} .hero-image{height:260px} }
+    @media(max-width:720px){
+      .nav-links{display:none}
+      .nav-toggle{display:block}
+      .gallery img{height:110px}
+      .hero-title{font-size:22px}
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="nav-inner">
+      <div class="logo">
+        <img src="assets/images/logo.jpg" alt="Dharma Hydrocolloid logo">
+        <div class="brand">Dharma Hydrocolloid</div>
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:12px">
+        <button class="lang-btn" aria-expanded="false">🌐 English ▾</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <!-- HERO -->
+      <section class="hero" aria-labelledby="ox-title">
+        <div>
+          <p class="eyebrow">Industrial Grade Oxalic Acid</p>
+          <h1 id="ox-title" class="hero-title">Oxalic Acid (C₂H₂O₄) — Rust / Stain Remover & Textile Bleaching</h1>
+          <p class="hero-desc lead">
+            Industrial Grade Oxalic Acid is a high-purity white crystalline powder used for rust removal, textile bleaching,
+            metal cleaning, wood & stone restoration, pulp & paper processing and semiconductor surface treatment. Purity
+            typically ≥99.5% for consistent industrial performance. :contentReference[oaicite:1]{index=1}
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="mailto:aadeshgandhi@dharmahydrocolloid.com?subject=Oxalic%20Acid%20Quote">Request Quote</a>
+            <a class="btn btn-outline" href="#specs">View Specs</a>
+          </div>
+
+          <div style="margin-top:12px;color:var(--muted)">
+            <strong>CAS:</strong> 144-62-7 &nbsp; | &nbsp; <strong>Formula:</strong> C₂H₂O₄
+          </div>
+        </div>
+
+        <div class="hero-image" aria-hidden="false">
+          <img src="assets/images/oxalic-1.jpg" alt="Oxalic acid crystals">
+        </div>
+      </section>
+
+      <!-- DETAILS GRID -->
+      <section class="content-grid">
+        <article>
+          <h2>Product Overview</h2>
+          <p class="lead">
+            Oxalic Acid is a versatile, effective industrial chemical — a powerful rust and stain remover and a widely used
+            bleaching agent in textiles. Our industrial grades (≥99.5% purity) offer consistent solubility, chelation and
+            reducing properties needed across industrial processes. :contentReference[oaicite:2]{index=2}
+          </p>
+
+          <div class="section" id="specs">
+            <h3>Key Properties & Specifications</h3>
+            <table aria-describedby="specs">
+              <tbody>
+                <tr><td style="width:45%;font-weight:600">Chemical formula</td><td>C₂H₂O₄</td></tr>
+                <tr><td style="font-weight:600">Purity</td><td>≥99.5% (Industrial Grade)</td></tr>
+                <tr><td style="font-weight:600">Appearance</td><td>White crystalline powder</td></tr>
+                <tr><td style="font-weight:600">Density (approx.)</td><td>~1.9 g/cm³</td></tr>
+                <tr><td style="font-weight:600">Solubility</td><td>Highly soluble in water and alcohol</td></tr>
+                <tr><td style="font-weight:600">CAS No.</td><td>144-62-7</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="section">
+            <h3>Applications & Uses</h3>
+            <p class="lead"><strong>Textiles:</strong> bleaching cotton, linen and silk; removes pigments and iron stains; improves dye uniformity.</p>
+            <p class="lead"><strong>Metal Treatment:</strong> removes rust and forms water-soluble ferrioxalate complexes for easy dissolution.</p>
+            <p class="lead"><strong>Wood & Stone Restoration:</strong> bleaches and brightens wood, marble and concrete surfaces.</p>
+            <p class="lead"><strong>Water Treatment:</strong> chelating agent for heavy metals; assists in pH control and surface prep.</p>
+            <p class="lead"><strong>Pulp & Paper:</strong> used in bleaching to remove lignin and impurities for high-brightness products.</p>
+            <p class="lead"><strong>Semiconductor:</strong> used in copper planarization and surface treatments for electronics manufacturing.</p>
+          </div>
+
+          <div class="section">
+            <h3>Advantages & Benefits</h3>
+            <ul class="lead">
+              <li>Multi-purpose: cleaning, bleaching and rust removal in one chemical.</li>
+              <li>High efficacy and cost-effective performance in industrial processes.</li>
+              <li>Favorable handling and disposal profile when used with appropriate controls.</li>
+            </ul>
+          </div>
+
+          <div class="section safety" role="note">
+            <strong>Safety & Handling</strong>
+            <p style="margin:8px 0 0">Store in a dry, cool place away from oxidizing agents. Use appropriate PPE (gloves, eye protection, protective clothing). Oxalic acid can be corrosive at high concentrations — follow SDS guidance and local regulations for disposal.</p>
+          </div>
+
+          <div class="section">
+            <h3>Frequently Asked Questions</h3>
+            <p class="lead"><strong>Q:</strong> Is oxalic acid safe for textile bleaching?<br><strong>A:</strong> Yes — widely used in textile manufacturing when industrial safety protocols are followed.</p>
+            <p class="lead"><strong>Q:</strong> Can oxalic acid remove rust from machinery?<br><strong>A:</strong> Yes — it is commonly used for rust removal and industrial cleaning of metal surfaces.</p>
+          </div>
+        </article>
+
+        <aside>
+          <div class="specs">
+            <h4>Product Snapshot</h4>
+            <p style="margin:6px 0"><strong>Formula:</strong> C₂H₂O₄</p>
+            <p style="margin:6px 0"><strong>Purity:</strong> ≥99.5%</p>
+            <p style="margin:6px 0"><strong>Appearance:</strong> White crystalline powder</p>
+            <div style="margin-top:12px">
+              <a class="btn btn-primary" href="mailto:aadeshgandhi@dharmahydrocolloid.com?subject=Oxalic%20Acid%20Sample">Request Sample</a>
+            </div>
+          </div>
+
+          <div style="height:14px"></div>
+
+          <div class="gallery" aria-label="Product photos">
+            <img src="assets/images/oxalic-2.jpg" alt="Oxalic acid closeup" data-large="assets/images/oxalic-2.jpg">
+            <img src="assets/images/oxalic-3.jpg" alt="Oxalic acid in lab" data-large="assets/images/oxalic-3.jpg">
+          </div>
+        </aside>
+      </section>
+
+      <!-- CTA footer -->
+      <footer class="cta-footer" role="contentinfo">
+        <div class="cta-wrap">
+          <h3>Request a quote or sample</h3>
+          <p class="cta-sub">Email us for SDS, COA, pricing and export documentation — we support global shipping and flexible packaging.</p>
+
+          <div class="cta-buttons">
+            <a class="cta-btn primary" href="mailto:aadeshgandhi@dharmahydrocolloid.com?subject=Oxalic%20Acid%20Quote">Email Sales</a>
+            <a class="cta-btn outline" href="https://wa.me/918097335455" target="_blank" rel="noopener">Call / WhatsApp</a>
+          </div>
+
+          <div class="cta-footer-bottom" style="margin-top:18px;">
+            <small>© <span id="footerYear"></span> Dharma Hydrocolloid — All rights reserved.</small>
+          </div>
+        </div>
+      </footer>
+
+    </div> <!-- /.container -->
+  </main>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <img src="" alt="enlarged photo">
+  </div>
+
+  <script>
+    // dynamic header spacing
+    (function(){
+      const header = document.querySelector('.site-header');
+      function updateHeaderHeight(){
+        if(!header) return;
+        const h = Math.ceil(header.getBoundingClientRect().height);
+        document.documentElement.style.setProperty('--header-h', h + 'px');
+        document.body.style.paddingTop = h + 'px';
+      }
+      window.addEventListener('load', updateHeaderHeight);
+      window.addEventListener('resize', updateHeaderHeight);
+    })();
+
+    // mobile nav toggle
+    (function(){
+      const navToggle = document.getElementById('navToggle');
+      const nav = document.querySelector('.nav-links');
+      navToggle && navToggle.addEventListener('click', ()=> {
+        if(!nav) return;
+        const isShown = getComputedStyle(nav).display !== 'none';
+        nav.style.display = isShown ? 'none' : 'flex';
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.right = '18px';
+        nav.style.top = 'calc(var(--header-h) + 6px)';
+        nav.style.background = '#fff';
+        nav.style.padding = '12px';
+        nav.style.boxShadow = '0 12px 40px rgba(2,6,23,0.08)';
+      });
+      document.addEventListener('click', (e)=>{
+        if(window.innerWidth >= 720) return;
+        if(!nav) return;
+        if(!nav.contains(e.target) && !navToggle.contains(e.target)) nav.style.display = 'none';
+      });
+    })();
+
+    // gallery lightbox
+    (function(){
+      const lightbox = document.getElementById('lightbox');
+      const lightImg = lightbox && lightbox.querySelector('img');
+      document.querySelectorAll('.gallery img').forEach(img => {
+        img.addEventListener('click', () => {
+          const src = img.getAttribute('data-large') || img.src;
+          if(lightImg) lightImg.src = src;
+          if(lightbox){ lightbox.classList.add('show'); lightbox.style.display = 'flex'; lightbox.setAttribute('aria-hidden','false'); }
+        });
+      });
+      if(lightbox){
+        lightbox.addEventListener('click', ()=> {
+          lightbox.style.display = 'none';
+          lightbox.setAttribute('aria-hidden','true');
+          if(lightImg) lightImg.src = '';
+        });
+        document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') lightbox.style.display = 'none'; });
+      }
+    })();
+
+    // footer year
+    (function(){ const el = document.getElementById('footerYear'); if(el) el.textContent = new Date().getFullYear(); })();
+  </script>
+</body>
+</html>

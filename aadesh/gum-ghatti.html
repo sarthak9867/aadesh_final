@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gum Ghatti (Dhavda Gum) — Dharma Hydrocolloid</title>
+  <meta name="description" content="Gum Ghatti (Dhavda Gum) — premium natural hydrocolloid from Anogeissus latifolia. Learn grades, specs, applications (food, pharma, oil & gas), and request samples." />
+  <meta property="og:title" content="Gum Ghatti — Dharma Hydrocolloid" />
+  <meta property="og:description" content="Premium Gum Ghatti (Dhavda Gum) — grades, specs, and applications for food, pharma, oil & industrial uses." />
+  <meta property="og:image" content="assets/images/gum_ghati_1.jpg" />
+  <meta name="theme-color" content="#ffffff" />
+  <style>
+    /* ===== Reset & base ===== */
+    :root{
+      --blue:#2563ff;
+      --muted:#586770;
+      --bg:#ffffff;
+      --card:#fff;
+      --header-h:72px;
+      --container:1200px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;color:#0f1724;background:var(--bg);-webkit-font-smoothing:antialiased;line-height:1.6}
+    a{color:inherit}
+
+    /* ===== Header (fixed) ===== */
+    .site-header{
+      position:fixed;
+      left:0;right:0;top:0;
+      height:var(--header-h);
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,0.06);
+      display:flex;align-items:center;z-index:9999;
+      box-shadow: 0 2px 10px rgba(2,6,23,0.04);
+    }
+    .nav-container{
+      width:100%;max-width:var(--container);margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:space-between;gap:20px;
+    }
+    .logo-section{display:flex;align-items:center;gap:12px}
+    .logo-section img{height:44px;width:44px;object-fit:cover;border-radius:50%}
+    .brand-name{font-size:20px;color:var(--blue);font-weight:600;margin:0}
+    .nav-links{display:flex;gap:22px;align-items:center}
+    .nav-links a{font-weight:500;color:#28313a;text-decoration:none;padding:6px 2px}
+    .nav-links a:hover{color:var(--blue)}
+    .lang-btn{background:#f4f6fb;padding:8px 12px;border-radius:10px;border:none;cursor:pointer;font-weight:500;color:#374151}
+
+    /* Mobile nav toggle */
+    .nav-toggle{display:none;background:none;border:none;font-size:20px;cursor:pointer}
+
+    /* Page container */
+    .container{max-width:var(--container);margin:0 auto;padding:24px}
+
+    /* Hero image & heading */
+    main{padding-top:calc(var(--header-h) + 18px)}
+    .hero {
+      display:grid;
+      grid-template-columns: 1fr 520px;
+      gap:40px;
+      align-items:center;
+      padding:28px 20px 40px;
+      background:linear-gradient(180deg,#f6fbff 0%, #ffffff 100%);
+    }
+    .eyebrow{color:#334155;font-weight:600;margin:0 0 10px;font-size:14px}
+    .hero-title{font-size:30px;line-height:1.06;color:#0b2545;margin:0 0 14px;font-weight:600}
+    .hero-desc{color:var(--muted);font-size:17px;max-width:720px;margin:0 0 20px}
+
+    .cta-row{display:flex;gap:14px;margin-bottom:22px}
+    .btn{
+      display:inline-flex;align-items:center;gap:10px;padding:12px 18px;border-radius:12px;text-decoration:none;font-weight:600;cursor:pointer;border:none
+    }
+    .btn-primary{background:#0b1220;color:#fff;box-shadow:0 10px 28px rgba(11,18,32,0.14)}
+    .btn-outline{background:#fff;border:1px solid rgba(11,18,32,0.06);color:#111827}
+
+    .hero-stats{display:flex;gap:56px;margin-top:6px}
+    .stat-title{color:var(--blue);font-size:34px;font-weight:600;margin-bottom:6px}
+    .stat-sub{color:var(--muted);font-size:14px}
+
+    .hero-image{width:100%;max-width:520px;height:420px;border-radius:22px;overflow:hidden;box-shadow:0 32px 80px rgba(2,6,23,0.12)}
+    .hero-image img{width:100%;height:100%;object-fit:cover;display:block}
+
+    /* ===== Product cards section ===== */
+    .products-section{padding:60px 20px;background:#fff}
+    .section-title{text-align:center;font-size:22px;font-weight:600;color:#0b2545;margin-bottom:8px}
+    .section-subtext{text-align:center;color:var(--muted);max-width:900px;margin:0 auto 28px;font-size:15px}
+
+    .product-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch;justify-items:center}
+    .product-card{width:100%;max-width:360px;background:var(--card);border-radius:12px;overflow:hidden;box-shadow:0 6px 18px rgba(15,23,42,0.06);display:flex;flex-direction:column}
+    .product-card img{width:100%;height:260px;object-fit:cover}
+    .card-body{padding:18px}
+    .card-body .icon{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:8px;background:#e8f0ff;color:var(--blue);font-size:18px;margin-bottom:10px}
+    .card-body h3{margin:0 0 6px;font-size:18px}
+    .card-body p{margin:0;color:var(--muted);font-size:14px}
+
+    /* ===== Categories (accordion) ===== */
+    .categories-section{padding:60px 20px;background:#fff}
+    .accordion{max-width:900px;margin:0 auto;text-align:left}
+    .accordion-item{border-bottom:1px solid #eef2f6;padding:12px 0}
+    .accordion-header{display:flex;align-items:center;justify-content:space-between;gap:12px;background:none;border:none;width:100%;cursor:pointer;padding:12px 6px;font-weight:600;font-size:16px;color:#111}
+    .accordion-header .left{display:flex;align-items:center;gap:12px}
+    .accordion-header .icon{color:var(--blue);font-size:20px}
+    .accordion-panel{max-height:0;overflow:hidden;transition:max-height .32s ease;padding-left:46px}
+    .accordion-item.active .accordion-panel{max-height:600px;padding-top:12px;padding-bottom:12px}
+    .subcategory-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px}
+    .subcategory-list a{display:block;padding:14px 18px;background:#f8fafc;border-radius:12px;text-decoration:none;color:#1f2937}
+    .subcategory-list a:hover{background:#eef5ff;color:var(--blue)}
+
+    /* ===== Product detail content (this page) ===== */
+    .detail-section{padding:36px 20px 70px;background:#fff;max-width:1000px;margin:0 auto}
+    .detail-grid{display:grid;grid-template-columns:1fr 380px;gap:28px;align-items:start}
+    .detail-content h2{margin-top:0}
+    .specs{background:#f8fafc;padding:16px;border-radius:12px}
+    .specs h4{margin:0 0 8px}
+    .faqs{margin-top:20px}
+    .faq{margin-bottom:14px}
+    .contact-cta{display:flex;gap:12px;align-items:center;margin-top:18px}
+
+    /* gallery */
+    /* .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .gallery img{width:100%;height:160px;object-fit:cover;border-radius:10px;box-shadow:0 12px 30px rgba(2,6,23,0.06);cursor:pointer} */
+
+    /* small screens */
+    @media (max-width:1000px){
+      .hero{grid-template-columns:1fr 360px}
+      .product-cards{grid-template-columns:repeat(2,1fr)}
+      .detail-grid{grid-template-columns:1fr}
+      .hero-image{height:340px}
+    }
+    @media (max-width:720px){
+      .nav-links{display:none}
+      .nav-toggle{display:block}
+      .product-cards{grid-template-columns:1fr}
+      .hero{grid-template-columns:1fr}
+      .hero-image{height:260px}
+    }
+
+    /* lightbox overlay */
+    .lightbox{
+      position:fixed;inset:0;display:none;align-items:center;justify-content:center;background:rgba(2,6,23,0.7);z-index:20000;padding:20px
+    }
+    .lightbox img{max-width:100%;max-height:100%;border-radius:8px;box-shadow:0 20px 60px rgba(2,6,23,0.6)}
+    .lightbox.show{display:flex}
+  </style>
+</head>
+<body>
+
+  <!-- ===== Header (re-usable) ===== -->
+  <header class="site-header" role="banner">
+    <div class="nav-container">
+      <div class="logo-section">
+        <img src="assets/images/logo.jpg" alt="Dharma Hydrocolloid logo" />
+        <div class="brand-name">Dharma Hydrocolloid</div>
+      </div>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#categories">Product categories</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <div style="display:flex;align-items:center;gap:12px">
+        <button class="lang-btn" aria-label="Language selector">🌐 English ▾</button>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO (re-using same design) ===== -->
+    <section class="hero container">
+      <div>
+        <p class="eyebrow">Premium Natural Gums & Hydrocolloids</p>
+        <h1 class="hero-title">Gum Ghatti (Dhavda Gum) — Nature’s Multi-Tasking Hydrocolloid</h1>
+        <p class="hero-desc">
+          Gum Ghatti is a plant-derived hydrocolloid obtained from the Anogeissus latifolia tree (Dhawda).
+          It’s a naturally emulsifying, stabilizing, and thickening agent used across food, pharma, oilfield,
+          and industrial applications. Dharma Hydrocolloid supplies precision-processed Gum Ghatti that meets global standards.
+        </p>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#contact">Request Sample</a>
+          <a class="btn btn-outline" href="#specs">Download Datasheet</a>
+        </div>
+
+        <div class="hero-stats">
+          <div>
+            <div class="stat-title">Global</div>
+            <div class="stat-sub">Export Reach</div>
+          </div>
+          <div>
+            <div class="stat-title">Premium</div>
+            <div class="stat-sub">Quality Products</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="assets/images/gum_ghati_3.jpg" alt="Gum ghatti crystals">
+      </div>
+    </section>
+
+    <!-- ===== Products preview (kept minimal) ===== -->
+    <!-- <section class="products-section">
+      <div class="container">
+        <h3 class="section-title">Our Products</h3>
+        <p class="section-subtext">Explore our range of natural gums, textile chemicals and food ingredients. Click categories below for detailed subcategory pages.</p>
+
+        <div class="product-cards">
+          <div class="product-card">
+            <img src="assets/images/gum_ghati_2.jpg" alt="Natural Gums">
+            <div class="card-body">
+              <div class="icon">🍃</div>
+              <h3>Natural Gums & Hydrocolloids</h3>
+              <p>Premium Gum Ghatti for food, pharma, and industrial applications.</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/gum_ghati_3.jpg" alt="Textile Chemicals">
+            <div class="card-body">
+              <div class="icon">🧴</div>
+              <h3>Textile Chemicals</h3>
+              <p>High-performance chemicals for textile processing.</p>
+            </div>
+          </div>
+
+          <div class="product-card">
+            <img src="assets/images/gum_ghati_4.jpg" alt="Food Ingredients">
+            <div class="card-body">
+              <div class="icon">🍽️</div>
+              <h3>Food Ingredients</h3>
+              <p>Food-grade preservatives and additives used globally.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ===== Categories /accordion =====
+    <section class="categories-section">
+      <div class="container">
+        <div class="accordion">
+          <div class="accordion-item active">
+            <button class="accordion-header">
+              <div class="left"><div class="icon">🍃</div><div>Natural Gums & Hydrocolloids</div></div>
+              <div class="right arrow">▾</div>
+            </button>
+            <div class="accordion-panel">
+              <ul class="subcategory-list">
+                <li><a href="gum-ghatti.html">Gum Ghatti</a></li>
+                <li><a href="gum-arabic.html">Gum Arabic</a></li>
+                <li><a href="gum-karaya.html">Gum Karaya</a></li>
+                <li><a href="gum-olibanum.html">Gum Olibanum</a></li>
+                <li><a href="guar-gum.html">Guar Gum</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="left"><div class="icon">🧴</div><div>Textile Chemicals</div></div>
+              <div class="right arrow">▾</div>
+            </button>
+            <div class="accordion-panel">
+              <ul class="subcategory-list">
+                <li><a href="bleaching-powder.html">Bleaching Powder</a></li>
+                <li><a href="caustic-soda.html">Caustic Soda Flakes</a></li>
+                <li><a href="hydrogen-peroxide.html">Hydrogen Peroxide</a></li>
+                <li><a href="oxalic-acid.html">Oxalic Acid</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header">
+              <div class="left"><div class="icon">🍽️</div><div>Food Ingredients</div></div>
+              <div class="right arrow">▾</div>
+            </button>
+            <div class="accordion-panel">
+              <ul class="subcategory-list">
+                <li><a href="sodium-propionate.html">Sodium Propionate</a></li>
+                <li><a href="calcium-propionate.html">Calcium Propionate Powder</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ===== Gum Ghatti detail content (this page) ===== -->
+    <section class="detail-section" id="detail">
+      <div class="detail-grid">
+        <div class="detail-content">
+          <h2>Gum Ghatti (Dhavda Gum)</h2>
+
+          <p><strong>Gum Ghatti</strong> is a plant-derived hydrocolloid obtained from the <em>Anogeissus latifolia</em> (Dhawda) tree.
+            It is valued for superior emulsification, high viscosity, film-forming ability and long-term stability.
+            Dharma Hydrocolloid supplies precision-processed Gum Ghatti suitable for food, pharmaceutical, oilfield
+            and various industrial applications.</p>
+
+          <h3>Available Grades</h3>
+          <ul>
+            <li><strong>Gum Ghatti Nova 1</strong> — Crude & Powder</li>
+            <li><strong>Gum Ghatti Nova 2</strong> — Crude & Powder</li>
+            <li><strong>Gum Ghatti Nova 3</strong> — Crude & Powder</li>
+            <li><strong>Gum Ghatti Super Nova</strong> — Spray-dried powder, high-purity for food & pharma</li>
+          </ul>
+
+          <h3>Functional & Chemical Highlights</h3>
+          <ul>
+            <li>Water Dispersibility: 80–90% (hot or cold water)</li>
+            <li>pH Stability: naturally buffers near pH 4.8</li>
+            <li>Polymer Composition: L-arabinose, D-galactose, D-mannose, D-xylose & glucuronic acid</li>
+            <li>Key functions: superior emulsification, high viscosity, film formation and long-term stability</li>
+          </ul>
+
+          <h3>Key Applications</h3>
+          <p><strong>Food & Beverage:</strong> emulsions (turmeric/lycopene), syrup clarity, natural coatings.</p>
+          <p><strong>Pharmaceuticals:</strong> oil-based vitamin stabilization, controlled release carriers.</p>
+          <p><strong>Oil & Gas:</strong> viscosifier in drilling fluids, acidizing applications.</p>
+          <p><strong>Industrial:</strong> dust-binding emulsions, water-repellent coatings, microencapsulation.</p>
+
+          <div class="faqs">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq">
+              <strong>Q1: What makes Dharma’s Gum Ghatti different?</strong>
+              <p>A: We offer customized grades and blends tailored to your processing conditions and end-use.</p>
+            </div>
+            <div class="faq">
+              <strong>Q2: Which form should I choose — crude, powder, or spray-dried?</strong>
+              <p>A: Crude for industrial processing; Powder for ease-of-use; Spray-dried for high-precision food/pharma use.</p>
+            </div>
+            <div class="faq">
+              <strong>Q3: Can Gum Ghatti replace Gum Arabic?</strong>
+              <p>A: Yes — in many emulsions and stabilizer roles Gum Ghatti outperforms Gum Arabic and is often a cost-effective replacement.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <aside class="detail-aside">
+          <div class="specs">
+            <h4>Product Snapshot</h4>
+            <p><strong>Botanical name:</strong> <em>Anogeissus latifolia</em></p>
+            <p><strong>Appearance:</strong> Pale yellow to amber crystals</p>
+            <p><strong>Forms:</strong> Crude, Powder, Spray-dried</p>
+            <p><strong>Typical use:</strong> Emulsifier, stabilizer, viscosifier</p>
+
+            <div style="margin-top:12px">
+              <a class="btn btn-primary" href="mailto:aadeshgandhi@dharmahydrocolloid.com">Request Sample</a>
+            </div>
+          </div>
+
+          <div style="height:18px"></div>
+
+          <div class="gallery" aria-label="Product photos">
+            <!-- <img src="assets/images/gum_ghati_2.jpg" alt="Gum Ghatti crystals closeup" data-large="assets/images/gum_ghati_2.jpg"> -->
+            <!-- <img src="assets/images/gum_ghati_3.jpg" alt="Gum Ghatti in tray" data-large="assets/images/gum_ghati_3.jpg"> -->
+            <img src="assets/images/gum_ghati_4.jpg" height = 500px width=375px alt="Gum Ghatti crystals" data-large="assets/images/gum_ghati_4.jpg">
+            <!-- <img src="assets/images/gum_ghati_1.jpg" alt="Gum Ghatti on tree" data-large="assets/images/gum_ghati_1.jpg"> -->
+          </div>
+
+          <div style="height:16px"></div>
+          <div style="font-size:13px;color:var(--muted)">For technical queries:<br><strong>aadeshgandhi@dharmahydrocolloid.com</strong><br>+91 80973 35455</div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- Contact anchor -->
+    <section id="contact" style="padding:40px 20px 120px;background:#f8fafc">
+      <div class="container" style="max-width:900px">
+        <h3 style="margin-top:0">Request a sample or technical datasheet</h3>
+        <p style="color:var(--muted)">Email us and we will respond with pricing, sample shipping and technical dossier.</p>
+        <div class="contact-cta">
+          <a class="btn btn-primary" href="mailto:aadeshgandhi@dharmahydrocolloid.com">Email Sales</a>
+          <a class="btn btn-outline" href="tel:+918097335455">Call / WhatsApp</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Lightbox for gallery -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <img src="" alt="enlarged photo">
+  </div>
+
+  <script>
+    // ===== Header spacing: compute header height dynamically =====
+    (function(){
+      const header = document.querySelector('.site-header');
+      function updateHeaderHeight(){
+        if(!header) return;
+        const h = Math.ceil(header.getBoundingClientRect().height);
+        document.documentElement.style.setProperty('--header-h', h + 'px');
+        document.body.style.paddingTop = h + 'px';
+      }
+      window.addEventListener('load', updateHeaderHeight);
+      window.addEventListener('resize', updateHeaderHeight);
+      // watch for DOM changes
+      if('MutationObserver' in window && header){
+        const mo = new MutationObserver(updateHeaderHeight);
+        mo.observe(header, {childList:true, subtree:true, attributes:true, characterData:true});
+      }
+    })();
+
+    // ===== Mobile nav toggle =====
+    (function(){
+      const navToggle = document.getElementById('navToggle');
+      const nav = document.querySelector('.nav-links');
+      navToggle && navToggle.addEventListener('click', ()=>{
+        if(!nav) return;
+        nav.style.display = (nav.style.display === 'flex' ? 'none' : 'flex');
+        // simple style for mobile
+        nav.style.flexDirection = 'column';
+        nav.style.position = 'absolute';
+        nav.style.top = 'calc(var(--header-h) + 6px)';
+        nav.style.right = '20px';
+        nav.style.background = '#fff';
+        nav.style.padding = '12px';
+        nav.style.boxShadow = '0 12px 40px rgba(2,6,23,0.08)';
+      });
+      // close menu on outside click
+      document.addEventListener('click', (e)=>{
+        if(!nav || !navToggle) return;
+        if(!nav.contains(e.target) && !navToggle.contains(e.target)) {
+          if(window.innerWidth < 720) nav.style.display = 'none';
+        }
+      });
+    })();
+
+    // ===== Accordion behavior =====
+    (function(){
+      document.querySelectorAll('.accordion-header').forEach(header=>{
+        header.addEventListener('click', ()=>{
+          const item = header.parentElement;
+          const open = item.classList.contains('active');
+          document.querySelectorAll('.accordion-item').forEach(i=>i.classList.remove('active'));
+          if(!open) item.classList.add('active');
+        });
+      });
+    })();
+
+    // ===== Smooth anchor scrolling for internal links =====
+    (function(){
+      document.querySelectorAll('a[href^="#"]').forEach(a=>{
+        a.addEventListener('click', function(e){
+          const href = a.getAttribute('href');
+          if(!href || href === '#') return;
+          const target = document.querySelector(href);
+          if(target){
+            e.preventDefault();
+            const headerH = parseInt(getComputedStyle(document.documentElement).getPropertyValue('--header-h')) || 72;
+            const top = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
+            window.scrollTo({top, behavior:'smooth'});
+          }
+        });
+      });
+    })();
+
+    // ===== Gallery lightbox =====
+    (function(){
+      const lightbox = document.getElementById('lightbox');
+      const lightImg = lightbox && lightbox.querySelector('img');
+      document.querySelectorAll('.gallery img').forEach(img=>{
+        img.addEventListener('click', ()=> {
+          const src = img.getAttribute('data-large') || img.src;
+          if(lightImg) lightImg.src = src;
+          if(lightbox) { lightbox.classList.add('show'); lightbox.setAttribute('aria-hidden','false'); }
+        });
+      });
+      if(lightbox){
+        lightbox.addEventListener('click', ()=> {
+          lightbox.classList.remove('show'); lightbox.setAttribute('aria-hidden','true');
+          if(lightImg) lightImg.src = '';
+        });
+      }
+      document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') { if(lightbox) lightbox.classList.remove('show'); } });
+    })();
+  </script>
+</body>
+</html>
